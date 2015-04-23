@@ -11,11 +11,11 @@
                 margin-top: 10px;
             }
             #footer{
-                
+
                 background-color: #686868;
                 position: fixed;
                 top:92.8%;
-                width: 100%;
+                width: 60%;
             }
 
             //{.navbar-default .navbar-collapse, .navbar-default .navbar-form 
@@ -28,36 +28,59 @@
     </head>
     <body>    
         <div class="container">
-        <!-- BOOTSTRAP links ///////////////////// -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <!-- BOOTSTRAP links ///////////////////// -->
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <!-- facebook icon script////////////////////////////////-->
-        <div id="fb-root"></div>
-        <script>(function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id))
-                    return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//connect.facebook.net/nl_BE/sdk.js#xfbml=1&version=v2.3";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-        <!-- twitter icon script/////////////////////////////////-->
-        <script>!function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <!-- facebook icon script////////////////////////////////-->
+            <div id="fb-root"></div>
+            <script>(function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id))
+                        return;
                     js = d.createElement(s);
                     js.id = id;
-                    js.src = p + '://platform.twitter.com/widgets.js';
+                    js.src = "//connect.facebook.net/nl_BE/sdk.js#xfbml=1&version=v2.3";
                     fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'twitter-wjs');</script>
+                }(document, 'script', 'facebook-jssdk'));</script>
 
-    
+            <!-- twitter icon script/////////////////////////////////-->
+            <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + '://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');</script>
+
+
+            <!-- facebook login 
+            <script>
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        appId: '1428288644142708',
+                        xfbml: true,
+                        version: 'v2.3'
+                    });
+                };
+
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            -->
+
             <!-- alles van de bovenkant /////////////// -->
             <a href="home" ><img src="../main/afbeeldingen/logo_tedxuhasselt.png" alt="TEDxUhasselt"></a>
 
@@ -90,3 +113,5 @@
                     </tr>
                 </table>
             </form>
+
+
