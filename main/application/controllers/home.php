@@ -9,9 +9,10 @@ class Home extends CI_Controller {
             $this->load->view('template/header');
             $this->load->view('template/navigation');
             
-		$this->load->view('home');
+		$this->load->view('view_home');
                  $this->load->view('template/footer');
 	}
+       
 }
 
 /* End of file welcome.php */

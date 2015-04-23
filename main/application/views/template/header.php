@@ -6,19 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>TEDxUhasselt</title>
-
-        <link rel="icon" 
-              href="../main/afbeeldingen/favicon.ico">
-
         <style type="text/css">
-            
+            .container{
+                margin-top: 10px;
+            }
+         
             //{.navbar-default .navbar-collapse, .navbar-default .navbar-form 
-              //  background-color: red;}
-            
+            //  background-color: red;}
+
         </style>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+        <link rel="icon" href="../main/afbeeldingen/favicon.ico">
     </head>
     <body>
         <!-- BOOTSTRAP links ///////////////////// -->
@@ -50,5 +49,12 @@
                 }
             }(document, 'script', 'twitter-wjs');</script>
         <div class="container">
+            <!-- alles van de bovenkant /////////////// -->
             <a href="home" ><img src="../main/afbeeldingen/logo_tedxuhasselt.png" alt="TEDxUhasselt"></a>
 
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
