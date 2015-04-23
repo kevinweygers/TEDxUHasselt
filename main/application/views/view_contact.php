@@ -5,10 +5,6 @@
         </title>
     </head>
     <body>
-        <div class="container">
-            <p class="pagination">
-                anus
-            </p>
-        </div>
+        doe iets ouwehoeren
     </body>
 </html>

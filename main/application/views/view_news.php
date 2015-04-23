@@ -1,7 +1,7 @@
 <html>
     <head> 
         <title>
-            News
+           <?php echo $title ?>
         </title>
     </head>
     <body>

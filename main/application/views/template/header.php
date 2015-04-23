@@ -11,10 +11,10 @@
                 margin-top: 10px;
             }
             // css van de footer
+            
             .footer{
                 background-color: red;
-                position: static;
-                
+               
             }
          
             //{.navbar-default .navbar-collapse, .navbar-default .navbar-form 
