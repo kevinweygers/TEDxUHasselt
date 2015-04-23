@@ -14,4 +14,15 @@ class Contact extends CI_Controller {
         $this->load->view('template/footer');
     }
 
+    public function login() {
+        $this->form_validation->set_rules('username', 'Username', 'required');
+        $this->form_validation->set_rules('username', 'Password', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('view_contact');
+        } else {
+            echo 'walla';
+        }
+    }
+
 }

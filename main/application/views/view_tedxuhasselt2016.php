@@ -1,11 +1,4 @@
-<html>
-  <head>
-    <title>
-        <?php echo $title ?>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
+
       
       <div class="page-header">
 TEDxUHasselt presents to you the theme for TEDxUHasselt 2016: CHALLENGE ACCEPTED!
@@ -34,5 +27,3 @@ Team
 Partners
 No partners for this event.
 </p>
-  </body>
-</html>

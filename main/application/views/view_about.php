@@ -1,10 +1,4 @@
-<html>
-    <head>
-        <title>
-            <?php echo $title ?>
-        </title>
-    </head>
-    <body>
+
         <div class="container">
             About TEDxUHasselt
 
@@ -12,5 +6,4 @@
 
             TEDxUHasselt was founded in 2011 by three Hasselt University students and has remained a student-driven organization ever since. Meet our team members!  
         </div>
-    </body>
-</html>
+ 

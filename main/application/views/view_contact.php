@@ -1,109 +1,112 @@
-<html>
-    <head>
-        <title>
-            <?php echo $title ?>
-        </title>
-    </head>
-    <body>
+<div class="container">
+    <!--<table width="450px">
 
-        <div class="container">
-            <form name="contactform" method="post" action="send_form_email.php">
+        <tr>
 
-                <table width="450px">
+            <td valign="top">
 
-                    <tr>
+                <label class="label label-default" for="first_name">First Name *</label>
 
-                        <td valign="top">
+            </td>
 
-                            <label class="label label-default" for="first_name">First Name *</label>
+            <td valign="top">
 
-                        </td>
+                <input class="form-control" type="text" name="first_name" maxlength="50" size="30">
 
-                        <td valign="top">
+            </td>
 
-                            <input class="form-control" type="text" name="first_name" maxlength="50" size="30">
+        </tr>
 
-                        </td>
+        <tr>
 
-                    </tr>
+            <td valign="top">
 
-                    <tr>
+                <label class="label label-default" for="last_name">Last Name *</label>
 
-                        <td valign="top">
+            </td>
 
-                            <label class="label label-default" for="last_name">Last Name *</label>
+            <td valign="top">
 
-                        </td>
+                <input class="form-control" type="text" name="last_name" maxlength="50" size="30">
 
-                        <td valign="top">
+            </td>
 
-                            <input class="form-control" type="text" name="last_name" maxlength="50" size="30">
+        </tr>
 
-                        </td>
+        <tr>
 
-                    </tr>
+            <td valign="top">
 
-                    <tr>
+                <label class="label label-default" for="email">Email Address *</label>
 
-                        <td valign="top">
+            </td>
 
-                            <label class="label label-default" for="email">Email Address *</label>
+            <td valign="top">
 
-                        </td>
+                <input class="form-control" type="text" name="email" maxlength="80" size="30">
 
-                        <td valign="top">
+            </td>
 
-                            <input class="form-control" type="text" name="email" maxlength="80" size="30">
+        </tr>
 
-                        </td>
+        <tr>
 
-                    </tr>
+            <td valign="top">
 
-                    <tr>
+                <label class="label label-default" for="telephone">Telephone Number</label>
 
-                        <td valign="top">
+            </td>
 
-                            <label class="label label-default" for="telephone">Telephone Number</label>
+            <td valign="top">
 
-                        </td>
+                <input class="form-control" type="text" name="telephone" maxlength="30" size="30">
 
-                        <td valign="top">
+            </td>
 
-                            <input class="form-control" type="text" name="telephone" maxlength="30" size="30">
+        </tr>
 
-                        </td>
+        <tr>
 
-                    </tr>
+            <td valign="top">
 
-                    <tr>
+                <label class="label label-default" for="comments">Comments *</label>
 
-                        <td valign="top">
+            </td>
 
-                            <label class="label label-default" for="comments">Comments *</label>
+            <td valign="top">
 
-                        </td>
+                <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
 
-                        <td valign="top">
+            </td>
 
-                            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+        </tr>
 
-                        </td>
+        <tr>
 
-                    </tr>
+            <td colspan="2" style="text-align:center">
 
-                    <tr>
+                <input class="btn btn-default navbar-btn" type="submit" value="Submit">   <a href="#">Email Form</a>
 
-                        <td colspan="2" style="text-align:center">
+            </td>
 
-                            <input type="submit" value="Submit">   <a href="#">Email Form</a>
+        </tr>
 
-                        </td>
+    </table>
 
-                    </tr>
+</form>
+    -->
 
-                </table>
 
-            </form>
-        </div>
-    </body>
-</html>
+    <?php echo form_open('contact/login'); ?>
+    
+    <?php echo validation_errors(); ?>
+    
+    <label>username</label>
+    <?php echo form_input(array('name' => 'username')); ?> <br/>
+    
+    <label>password</label>
+    <?php echo form_password(array('name' => 'password')); ?> <br/>
+    <?php echo form_submit(array('name' => 'submit'), 'login'); ?>
+
+    <?php echo form_close(); ?>
+</div>
