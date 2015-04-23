@@ -1,7 +1,8 @@
-<div class="footer">
-
+<div id="footer">
+<!-- facebook shit///// -->
 <div class="fb-like" data-href="https://www.facebook.com/TEDxUHasselt?fref=ts" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 <br>
+<!-- twitter shit//// -->
 <a href="https://twitter.com/TEDxUHasselt" class="twitter-follow-button" data-show-count="false" data-lang="nl">@TEDxUHasselt volgen</a> 
 <br>
 <!-- instagram logo -->
@@ -12,6 +13,7 @@
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
         .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
 <a href="http://instagram.com/tedxuhasselt?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
+
 </div>
 </div>
 </div>

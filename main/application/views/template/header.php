@@ -10,13 +10,14 @@
             .container{
                 margin-top: 10px;
             }
-            // css van de footer
-            
-            .footer{
-                background-color: red;
-               
+            #footer{
+                
+                background-color: #686868;
+                position: fixed;
+                top:92.8%;
+                width: 100%;
             }
-         
+
             //{.navbar-default .navbar-collapse, .navbar-default .navbar-form 
             //  background-color: red;}
 
@@ -25,7 +26,8 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="icon" href="../main/afbeeldingen/favicon.ico">
     </head>
-    <body>
+    <body>    
+        <div class="container">
         <!-- BOOTSTRAP links ///////////////////// -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -54,14 +56,37 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }
             }(document, 'script', 'twitter-wjs');</script>
-        
-        <div class="container">
+
+    
             <!-- alles van de bovenkant /////////////// -->
             <a href="home" ><img src="../main/afbeeldingen/logo_tedxuhasselt.png" alt="TEDxUhasselt"></a>
 
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+            <form class="navbar-form navbar-right" role="login">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">      
+                                <span class="input-group-addon" id="basic-addon2">@</span>
+                                <input type="text" class="form-control" placeholder=".com">
+                            </div>  
+                        </td>
+                        </div>
+                    </tr>
+                    </td>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </td>
+                        <td>
+                            <button type="submit" class="btn btn-default">Login</button>
+                        </td>
+                    </tr>
+                </table>
             </form>
