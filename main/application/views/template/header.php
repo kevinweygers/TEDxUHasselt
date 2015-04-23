@@ -5,10 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>TEDxUhasselt</title>
+        <title><?php echo $title; ?></title>
         <style type="text/css">
             .container{
                 margin-top: 10px;
+            }
+            // css van de footer
+            .footer{
+                background-color: red;
+                position: static;
+                
             }
          
             //{.navbar-default .navbar-collapse, .navbar-default .navbar-form 
@@ -48,6 +54,7 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }
             }(document, 'script', 'twitter-wjs');</script>
+        
         <div class="container">
             <!-- alles van de bovenkant /////////////// -->
             <a href="home" ><img src="../main/afbeeldingen/logo_tedxuhasselt.png" alt="TEDxUhasselt"></a>
