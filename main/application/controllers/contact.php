@@ -16,12 +16,22 @@ class Contact extends CI_Controller {
 
     public function login() {
         $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('username', 'Password', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
         $this->load->library('form_validation');
         if ($this->form_validation->run() == FALSE) {
-            echo 'hallo';
+              $data['title'] = "Contact";
+        $this->load->view('template/header', $data);
+        $this->load->view('template/navigation');
+        $this->load->view('view_contact');
+        $this->load->view('template/footer');
+        
+    
         } else {
-            echo 'walla';
+            $data['title'] = "Contact";
+        $this->load->view('template/header', $data);
+        $this->load->view('template/navigation');
+        $this->load->view('formsucces');
+        $this->load->view('template/footer');
         }
     }
 
