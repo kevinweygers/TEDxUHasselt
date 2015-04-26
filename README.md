@@ -1,2 +1,0 @@
-# TEDxUHasselt
-project webtech
